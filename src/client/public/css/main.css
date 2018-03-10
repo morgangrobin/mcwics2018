@@ -14,9 +14,8 @@
 
     color: #fff;
     text-align: center;
-    text-shadow: 0 1px 3px rgba(0,0,0,.5);
-    box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-    background-color: #333;
+
+    background-color: #71F6A3;
   }
 
   .page-wrapper {
@@ -61,7 +60,7 @@
   .header-nav > li > a {
     padding-right: 0;
     padding-left: 0;
-    font-size: 16px;
+    font-size: 24px;
     font-weight: bold;
     color: rgba(255,255,255,.75);
     border-bottom: 2px solid transparent;
