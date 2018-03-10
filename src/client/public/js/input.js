@@ -11,14 +11,20 @@ input.addEventListener('awesomplete-selectcomplete',function(){
   document.getElementById("divclass"+counter).style.display="block";
   document.getElementById("submitclasses").style.display="block";
   classes.push(this.value);
-  console.log(classes);
   counter++;
   this.value = '';
 });  
+
 
 //On submit, reveal the rest of questionnaire
 var submitclasses = document.getElementById("submitclasses");
 submitclasses.addEventListener('click',function(){
 	submitclasses.style.display="none";
 	document.getElementById("habits").style.display="block";
+	$('#calendar').fullCalendar('render');
+	// $('#calendar').fullCalendar({
+	// 	defaultDate: '2014-09-12',
+	// 	editable: true,
+	// 	eventLimit: true, // allow "more" link when too many events
+	// });
 });

@@ -1,8 +1,26 @@
 
-
-<link rel="stylesheet" href="/css/awesomplete.css" />
-<script src="/js/awesomplete.js"></script>
-<script src="/js/input.js" async></script>
+<head>
+	<link rel="stylesheet" href="/css/awesomplete.css" />
+	<script src="/js/awesomplete.js"></script>
+	<script src="/js/jquery.min.js"></script>
+	<link rel='stylesheet' href='/css/fullcalendar.css' />
+	<script src='/js/jquery.min.js'></script>
+	<script src='/js/moment.min.js'></script>
+	<script src='/js/fullcalendar.js'></script>
+	<script src="/js/input.js" async></script>
+	script.
+		$(document).ready(function() {
+			$('#calendar').fullCalendar({
+			selectable: true,
+			unselectAuto: false,
+			header: {
+				left: 'prev,next today',
+				center: 'title',
+				right: 'month,agendaWeek,agendaDay'
+			},
+			})
+		});
+</head>
 
 block body
 
@@ -150,7 +168,7 @@ block body
 								<h3 class="panel-title">Select the days that you will study.</h3>
 							</div>
 							<div class="panel-body">
-								<div id='calendar'></div>
+								<div id="calendar"></div>
 							</div>
 				</tr>
 			</table>
