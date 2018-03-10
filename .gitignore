@@ -34,3 +34,5 @@ node_modules
 
 src/client/public/build/
 src/client/public/uploads/
+
+*.DS_Store
