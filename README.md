@@ -1,4 +1,4 @@
-# NodeJS-Quickstart
+# NodeJS-Quickstart.
 Basic Node.js web application
 
 ## Setup
