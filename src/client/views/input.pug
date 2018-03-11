@@ -35,228 +35,229 @@
 
 block body
 	<div class="well" style="background-color: #17e7b8;">
-	<h3> Choose your classes!</h3>
+		<h3> Choose your classes!</h3>
 
-	<datalist id="mylist">
-		include classes.html
-	</datalist>
-	<input id="classselect" class="awesomplete" placeholder="ex. COMP 202"/>
-	<p>&nbsp</p>
-	//////////////Classes////////////////
-	<div class="divclass">
-		<div id="divclass1" style="display: none;">
-			<h1><span id="class1" class="label label-default">Class 1</span></h1>
-			//<button type="button" class="close"><span>&times;</span></button>
-		</div>
-
-		<div id="divclass2" style="display: none;">
-			<h1><span id="class2" class="label label-default">Class 2</span></h1>
-			//<button type="button" class="close"><span>&times;</span></button>
-		</div>
-
-		<div id="divclass3" style="display: none;">
-			<h1><span id="class3" class="label label-default">Class 3</span></h1>
-			//<button type="button" class="close"><span>&times;</span></button>
-		</div>
-
-		<div id="divclass4" style="display: none;">
-			<h1><span id="class4" class="label label-default">Class 4</span></h1>
-			//<button type="button" class="close"><span>&times;</span></button>
-		</div>
-
-		<div id="divclass5" style="display: none;">
-			<h1><span id="class5" class="label label-default">Class 5</span></h1>
-			//<button type="button" class="close"><span>&times;</span></button>
-		</div>
-
-		<div id="divclass6" style="display: none;">
-			<h1><span id="class6" class="label label-default">Class 6</span></h1>
-			//<button type="button" class="close"><span>&times;</span></button>
-		</div>
-	</div>
-
-	///////// Submit Classes //////////
-	<div id="submitclasses" style = "display: none">
-		<button type="button" class="btn btn-warning">Next</button>
-	</div>
-
-	///////// Habits ///////////
-	<div id="habits" style="display: none">
-		<div class="theme-showcase">
-			<div class="page-header">
-				<h1>What are your study habits?</h1>
+		<datalist id="mylist">
+			include classes.html
+		</datalist>
+		<input id="classselect" class="awesomplete" placeholder="ex. COMP 202"/>
+		<p>&nbsp</p>
+		//////////////Classes////////////////
+		<div class="divclass">
+			<div id="divclass1" style="display: none;">
+				<h1><span id="class1" class="label label-default">Class 1</span></h1>
+				//<button type="button" class="close"><span>&times;</span></button>
 			</div>
-			<table class = 'table'>
-				<tr>
-					<th align=left>
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							////////  When do you study //////////
-							<h3 class="panel-title">When do you study?</h3>
-						</div>
-						<div class="panel-body">
-							<div class="btn-group btn-group-toggle" id="studytype" data-toggle="buttons">
-								<label class="btn btn-warning active">
-									<input type="radio" name="options" id="timeregular" autocomplete="off" value="0" checked> 9-5
-								</label>
-								<label class="btn btn-warning">
-									<input type="radio" name="options" id="timeearly" autocomplete="off" value="1" > Early Bird
-								</label>
-								<label class="btn btn-warning">
-									<input type="radio" name="options" id="timelate" autocomplete="off" value="2" > Night Owl
-								</label>
-							</div>
-						</div>
-					</th>
-				</tr>
-				<tr>
-					<th align=left>
+
+			<div id="divclass2" style="display: none;">
+				<h1><span id="class2" class="label label-default">Class 2</span></h1>
+				//<button type="button" class="close"><span>&times;</span></button>
+			</div>
+
+			<div id="divclass3" style="display: none;">
+				<h1><span id="class3" class="label label-default">Class 3</span></h1>
+				//<button type="button" class="close"><span>&times;</span></button>
+			</div>
+
+			<div id="divclass4" style="display: none;">
+				<h1><span id="class4" class="label label-default">Class 4</span></h1>
+				//<button type="button" class="close"><span>&times;</span></button>
+			</div>
+
+			<div id="divclass5" style="display: none;">
+				<h1><span id="class5" class="label label-default">Class 5</span></h1>
+				//<button type="button" class="close"><span>&times;</span></button>
+			</div>
+
+			<div id="divclass6" style="display: none;">
+				<h1><span id="class6" class="label label-default">Class 6</span></h1>
+				//<button type="button" class="close"><span>&times;</span></button>
+			</div>
+		</div>
+
+		///////// Submit Classes //////////
+		<div id="submitclasses" style = "display: none">
+			<button type="button" class="btn btn-warning">Next</button>
+		</div>
+
+		///////// Habits ///////////
+		<div id="habits" style="display: none">
+			<div class="theme-showcase">
+				<div class="page-header">
+					<h1>What are your study habits?</h1>
+				</div>
+				<table class = 'table'>
+					<tr>
+						<th align=left>
 						<div class="panel panel-default">
 							<div class="panel-heading">
-								//////// Study on Exam days? ///////
-								<h3 class="panel-title">Do you want to study on exam days?</h3>
+								////////  When do you study //////////
+								<h3 class="panel-title">When do you study?</h3>
 							</div>
 							<div class="panel-body">
-								<div class="btn-group btn-group-toggle" id="examdays" data-toggle="buttons">
+								<div class="btn-group btn-group-toggle" id="studytype" data-toggle="buttons">
 									<label class="btn btn-warning active">
-										<input type="radio" name="options" id="examdaysyes" autocomplete="off" value="true" checked> Yes
+										<input type="radio" name="options" id="timeregular" autocomplete="off" value="0" checked> 9-5
 									</label>
 									<label class="btn btn-warning">
-										<input type="radio" name="options" id="examdaysno" autocomplete="off" value="false"> No
+										<input type="radio" name="options" id="timeearly" autocomplete="off" value="1" > Early Bird
+									</label>
+									<label class="btn btn-warning">
+										<input type="radio" name="options" id="timelate" autocomplete="off" value="2" > Night Owl
 									</label>
 								</div>
 							</div>
-					</th>
-				</tr>
-				<tr>
-					<th align=left>
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								//////// How much time studying ////////
-								<h3 class="panel-title">How much time will you spend studying every day?</h3>
-							</div>
-							<div class="panel-body">
-								<div class="input-group margin-bottom-sm">
-									<div class="slidecontainer" style="display: initial;">
-										<input type="range" min="2" max="12" value="8" class="slider" id="timestudying">
-										<p><span id="hoursstudying"></span> hours</p>
-										script.
-											var slider1 = document.getElementById("timestudying");
-											var output1 = document.getElementById("hoursstudying");
-											output1.innerHTML = slider1.value;
-
-											slider1.oninput = function(){output1.innerHTML = this.value;}
+						</th>
+					</tr>
+					<tr>
+						<th align=left>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									//////// Study on Exam days? ///////
+									<h3 class="panel-title">Do you want to study on exam days?</h3>
+								</div>
+								<div class="panel-body">
+									<div class="btn-group btn-group-toggle" id="examdays" data-toggle="buttons">
+										<label class="btn btn-warning active">
+											<input type="radio" name="options" id="examdaysyes" autocomplete="off" value="true" checked> Yes
+										</label>
+										<label class="btn btn-warning">
+											<input type="radio" name="options" id="examdaysno" autocomplete="off" value="false"> No
+										</label>
 									</div>
 								</div>
-							</div>
-					</th>
-				</tr>
-				<tr>
-					<th align=left>
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								//////// SLEEPING /////////
-								<h3 class="panel-title">How much time will you spend sleeping every day?</h3>
-							</div>
-							<div class="panel-body">
-								<div class="input-group margin-bottom-sm">
-									<div class="slidecontainer" style="display: initial;">
-										<input type="range" min="2" max="14" value="8" class="slider" id="timesleeping">
-										<p><span id="hourssleeping"></span> hours</p>
-										script.
-											var slider2 = document.getElementById("timesleeping");
-											var output2 = document.getElementById("hourssleeping");
-											output2.innerHTML = slider2.value;
+						</th>
+					</tr>
+					<tr>
+						<th align=left>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									//////// How much time studying ////////
+									<h3 class="panel-title">How much time will you spend studying every day?</h3>
+								</div>
+								<div class="panel-body">
+									<div class="input-group margin-bottom-sm">
+										<div class="slidecontainer" style="display: initial;">
+											<input type="range" min="2" max="12" value="8" class="slider" id="timestudying">
+											<p><span id="hoursstudying"></span> hours</p>
+											script.
+												var slider1 = document.getElementById("timestudying");
+												var output1 = document.getElementById("hoursstudying");
+												output1.innerHTML = slider1.value;
 
-											slider2.oninput = function(){output2.innerHTML = this.value;}
+												slider1.oninput = function(){output1.innerHTML = this.value;}
+										</div>
 									</div>
 								</div>
-							</div>
-					</th>
-				</tr>
-				<tr>
-					<th align=left>
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								////////// STUDY BLOCKS ////////
-								<h3 class="panel-title">How long will you study for before taking a break?</h3>
-							</div>
-							<div class="panel-body">
-								<div class="input-group margin-bottom-sm">
-									<div class="slidecontainer" style="display: initial;">
-										<input type="range" min="1" max="8" value="2" class="slider" id="studyblock">
-										<p><span id="hoursstudyblock"></span> hours</p>
-										script.
-											var slider3 = document.getElementById("studyblock");
-											var output3 = document.getElementById("hoursstudyblock");
-											output3.innerHTML = slider3.value;
+						</th>
+					</tr>
+					<tr>
+						<th align=left>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									//////// SLEEPING /////////
+									<h3 class="panel-title">How much time will you spend sleeping every day?</h3>
+								</div>
+								<div class="panel-body">
+									<div class="input-group margin-bottom-sm">
+										<div class="slidecontainer" style="display: initial;">
+											<input type="range" min="2" max="14" value="8" class="slider" id="timesleeping">
+											<p><span id="hourssleeping"></span> hours</p>
+											script.
+												var slider2 = document.getElementById("timesleeping");
+												var output2 = document.getElementById("hourssleeping");
+												output2.innerHTML = slider2.value;
 
-											slider3.oninput = function(){output3.innerHTML = this.value;}
+												slider2.oninput = function(){output2.innerHTML = this.value;}
+										</div>
 									</div>
 								</div>
-							</div>
-					</th>
-				</tr>
-				<tr>
-					<th align=left>
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								/////// BREAK BLOCKS /////////
-								<h3 class="panel-title">How long will your study breaks be?</h3>
-							</div>
-							<div class="panel-body">
-								<div class="input-group margin-bottom-sm">
-									<div class="slidecontainer" style="display: initial;">
-										<input type="range" min="5" max="60" value="15" class="slider" id="breaktime">
-										<p><span id="minutesbreaktime"></span> minutes</p>
-										script.
-											var slider4 = document.getElementById("breaktime");
-											var output4 = document.getElementById("minutesbreaktime");
-											output4.innerHTML = slider4.value;
+						</th>
+					</tr>
+					<tr>
+						<th align=left>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									////////// STUDY BLOCKS ////////
+									<h3 class="panel-title">How long will you study for before taking a break?</h3>
+								</div>
+								<div class="panel-body">
+									<div class="input-group margin-bottom-sm">
+										<div class="slidecontainer" style="display: initial;">
+											<input type="range" min="1" max="8" value="2" class="slider" id="studyblock">
+											<p><span id="hoursstudyblock"></span> hours</p>
+											script.
+												var slider3 = document.getElementById("studyblock");
+												var output3 = document.getElementById("hoursstudyblock");
+												output3.innerHTML = slider3.value;
 
-											slider4.oninput = function(){output4.innerHTML = this.value;}
+												slider3.oninput = function(){output3.innerHTML = this.value;}
+										</div>
 									</div>
 								</div>
-							</div>
-					</th>
-				</tr>
-				<tr>
-					<th align=left>
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								//////// MEALS /////////
-								<h3 class="panel-title">How long will your meal breaks be?</h3>
-							</div>
-							<div class="panel-body">
-								<div class="input-group margin-bottom-sm">
-									<div class="slidecontainer" style="display: initial;">
-										<input type="range" min="10" max="120" value="45" class="slider" id="mealtime">
-										<p><span id="minutesmealtime"></span> minutes</p>
-										script.
-											var slider5 = document.getElementById("mealtime");
-											var output5 = document.getElementById("minutesmealtime");
-											output5.innerHTML = slider5.value;
+						</th>
+					</tr>
+					<tr>
+						<th align=left>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									/////// BREAK BLOCKS /////////
+									<h3 class="panel-title">How long will your study breaks be?</h3>
+								</div>
+								<div class="panel-body">
+									<div class="input-group margin-bottom-sm">
+										<div class="slidecontainer" style="display: initial;">
+											<input type="range" min="5" max="60" value="15" class="slider" id="breaktime">
+											<p><span id="minutesbreaktime"></span> minutes</p>
+											script.
+												var slider4 = document.getElementById("breaktime");
+												var output4 = document.getElementById("minutesbreaktime");
+												output4.innerHTML = slider4.value;
 
-											slider5.oninput = function(){output5.innerHTML = this.value;}
+												slider4.oninput = function(){output4.innerHTML = this.value;}
+										</div>
 									</div>
 								</div>
-							</div>
-					</th>
-				</tr>
-				<tr>
-					<th align=left>
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								////////// STUDY DAYS /////////
-								<h3 class="panel-title">Select the days that you will study.</h3>
-							</div>
-							<div class="panel-body">
-								<div id="calendar"></div>
-							</div>
-				</tr>
-			</table>
-			<div>
-				<button id="submitquestionnaire" type="button" class="btn btn-success">Submit</button>
+						</th>
+					</tr>
+					<tr>
+						<th align=left>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									//////// MEALS /////////
+									<h3 class="panel-title">How long will your meal breaks be?</h3>
+								</div>
+								<div class="panel-body">
+									<div class="input-group margin-bottom-sm">
+										<div class="slidecontainer" style="display: initial;">
+											<input type="range" min="10" max="120" value="45" class="slider" id="mealtime">
+											<p><span id="minutesmealtime"></span> minutes</p>
+											script.
+												var slider5 = document.getElementById("mealtime");
+												var output5 = document.getElementById("minutesmealtime");
+												output5.innerHTML = slider5.value;
+
+												slider5.oninput = function(){output5.innerHTML = this.value;}
+										</div>
+									</div>
+								</div>
+						</th>
+					</tr>
+					<tr>
+						<th align=left>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									////////// STUDY DAYS /////////
+									<h3 class="panel-title">Select the days that you will study.</h3>
+								</div>
+								<div class="panel-body">
+									<div id="calendar"></div>
+								</div>
+					</tr>
+				</table>
+				<div>
+					<button id="submitquestionnaire" type="button" class="btn btn-success">Submit</button>
+				</div>
 			</div>
 		</div>
 	</div>
