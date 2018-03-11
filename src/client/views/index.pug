@@ -27,6 +27,26 @@ block scripts
       });
     });
 
+  script.
+    $(function() {
+      $("#submitquestionnaire").click(function(){
+        $(".header-nav li").removeClass("active");
+        $("#yourschedule").addClass("active");
+
+        $(".content-wrapper > div").removeClass("active");
+        $("#" + $(this).data("target")).addClass("active");
+        $('#weeklycalendar').fullCalendar({
+            selectable: true,
+            unselectAuto: false,
+            header: {
+                left: 'prev,next today',
+                center: 'title',
+                right: 'month,agendaWeek,agendaDay'
+            }
+        });
+      });
+    });
+
 
 
 block body

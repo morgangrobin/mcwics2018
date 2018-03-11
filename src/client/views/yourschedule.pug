@@ -10,8 +10,10 @@ script.
 				left: 'prev,next today',
 				center: 'title',
 				right: 'month,agendaWeek,agendaDay'
-			}
+			},
+			defaultView:'agendaWeek'
 			});
+			$('#weeklycalendar').fullCalendar( 'changeView', 'agendaWeek', '2018-04-08' );
 		});
 
 block body
