@@ -99,7 +99,7 @@ body .fc {
 .fc-state-active,
 .fc-state-disabled {
   color: #333333;
-  background-color: #333333; }
+  background-color: #e6e6e6; }
 
 .fc-state-hover {
   color: #333333;
