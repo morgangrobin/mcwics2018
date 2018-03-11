@@ -1,3 +1,5 @@
+<script src='/js/yourschedule.js'></script>
+
 
 script.
 		$(document).ready(function() {
@@ -8,16 +10,6 @@ script.
 				left: 'prev,next today',
 				center: 'title',
 				right: 'month,agendaWeek,agendaDay'
-			},
-			dayClick: function(date) {
-				document.getElementById("startdate").innerHTML = date.format();
-				console.log(document.getElementById("startdate").innerHTML);
-				document.getElementById("enddate").innerHTML = date.format();
-				console.log(document.getElementById("enddate").innerHTML);
-			},
-			select: function(startDate, endDate) {
-				document.getElementById("startdate").innerHTML = startDate.format();
-				document.getElementById("enddate").innerHTML = endDate.format();
 			}
 			});
 		});
