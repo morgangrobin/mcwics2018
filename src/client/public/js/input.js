@@ -25,9 +25,20 @@ submitclasses.addEventListener('click',function(){
 
 	var submitquestionnaire = document.getElementById("submitquestionnaire");
 	submitquestionnaire.addEventListener('click',function(){
-	var studytype = $('#filterDay input:radio:checked').val();
-	console.log(studytype);
-	//study type
+	var studytype = $('#studytype label.active input').val();
+	var examdays = $('#examdays label.active input').val();
+	var timestudying = $('#timestudying').val();
+	var timesleeping = $('#timesleeping').val();
+	var studyblock = $('#studyblock').val();
+	var breaktime = $('#breaktime').val();
+	var mealtime = $('#mealtime').val();
+	console.log("Study Type: " + studytype);
+	console.log("Exam days: "+ examdays);
+	console.log("Time Studying: " + timestudying);
+	console.log("Time Sleeping: " + timesleeping);
+	console.log("Study block: " + studyblock);
+	console.log("Break Time: " + breaktime);
+	console.log("Meal Time: " + mealtime);
 
 });
 
