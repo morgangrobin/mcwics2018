@@ -7,6 +7,17 @@
     clip: rect(0, 0, 0, 0);
 }
 
+.close {
+	display: inline-flex;
+}
+
+.divclass {
+	position:relative;
+	text-align: center;
+	align-items: center;
+	display: inline-table;
+}
+
 .awesomplete {
     display: inline-block;
     position: relative;
