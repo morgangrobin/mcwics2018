@@ -19,7 +19,17 @@
 				center: 'title',
 				right: 'month,agendaWeek,agendaDay'
 			},
-			})
+			dayClick: function(date) {
+				document.getElementById("startdate").innerHTML = date.format();
+				console.log(document.getElementById("startdate").innerHTML);
+				document.getElementById("enddate").innerHTML = date.format();
+				console.log(document.getElementById("enddate").innerHTML);
+			},
+			select: function(startDate, endDate) {
+				document.getElementById("startdate").innerHTML = startDate.format();
+				document.getElementById("enddate").innerHTML = endDate.format();
+			}
+			});
 		});
 </head>
 
@@ -30,40 +40,40 @@ block body
 	<datalist id="mylist">
 		include classes.html
 	</datalist>
-	<input id="classselect" class="awesomplete" placeholder="AAAA 1234"/>
-
+	<input id="classselect" class="awesomplete" placeholder="ex. COMP 202"/>
+	<p>&nbsp</p>
 	//////////////Classes////////////////
+	<div class="divclass">
+		<div id="divclass1" style="display: none;">
+			<h1><span id="class1" class="label label-default">Class 1</span></h1>
+			//<button type="button" class="close"><span>&times;</span></button>
+		</div>
 
-	<div id="divclass1" style="display: none;">
-		<span id="class1" class="label label-default">Class 1</span>
-		<button type="button" class="close"><span>&times;</span></button>
+		<div id="divclass2" style="display: none;">
+			<h1><span id="class2" class="label label-default">Class 2</span></h1>
+			//<button type="button" class="close"><span>&times;</span></button>
+		</div>
+
+		<div id="divclass3" style="display: none;">
+			<h1><span id="class3" class="label label-default">Class 3</span></h1>
+			//<button type="button" class="close"><span>&times;</span></button>
+		</div>
+
+		<div id="divclass4" style="display: none;">
+			<h1><span id="class4" class="label label-default">Class 4</span></h1>
+			//<button type="button" class="close"><span>&times;</span></button>
+		</div>
+
+		<div id="divclass5" style="display: none;">
+			<h1><span id="class5" class="label label-default">Class 5</span></h1>
+			//<button type="button" class="close"><span>&times;</span></button>
+		</div>
+
+		<div id="divclass6" style="display: none;">
+			<h1><span id="class6" class="label label-default">Class 6</span></h1>
+			//<button type="button" class="close"><span>&times;</span></button>
+		</div>
 	</div>
-
-	<div id="divclass2" style="display: none;">
-		<span id="class2" class="label label-default">Class 2</span>
-		<button type="button" class="close"><span>&times;</span></button>
-	</div>
-
-	<div id="divclass3" style="display: none;">
-		<span id="class3" class="label label-default">Class 3</span>
-		<button type="button" class="close"><span>&times;</span></button>
-	</div>
-
-	<div id="divclass4" style="display: none">
-		<span id="class4" class="label label-default">Class 4</span>
-		<button type="button" class="close"><span>&times;</span></button>
-	</div>
-
-	<div id="divclass5" style="display: none">
-		<span id="class5" class="label label-default">Class 5</span>
-		<button type="button" class="close"><span>&times;</span></button>
-	</div>
-
-	<div id="divclass6" style="display: none">
-		<span id="class6" class="label label-default">Class 6</span>
-		<button type="button" class="close"><span>&times;</span></button>
-	</div>
-
 
 	///////// Submit Classes //////////
 	<div id="submitclasses" style = "display: none">
@@ -74,7 +84,7 @@ block body
 	<div id="habits" style="display: none">
 		<div class="theme-showcase">
 			<div class="page-header">
-				<h1>What kind of a studier are you?</h1>
+				<h1>What are your study habits?</h1>
 			</div>
 			<table class = 'table'>
 				<tr>
@@ -123,7 +133,7 @@ block body
 						<div class="panel panel-default">
 							<div class="panel-heading">
 								//////// How much time studying ////////
-								<h3 class="panel-title">How much time do you spend studying every day?</h3>
+								<h3 class="panel-title">How much time will you spend studying every day?</h3>
 							</div>
 							<div class="panel-body">
 								<div class="input-group margin-bottom-sm">
@@ -146,7 +156,7 @@ block body
 						<div class="panel panel-default">
 							<div class="panel-heading">
 								//////// SLEEPING /////////
-								<h3 class="panel-title">How much time do you spend sleeping every day?</h3>
+								<h3 class="panel-title">How much time will you spend sleeping every day?</h3>
 							</div>
 							<div class="panel-body">
 								<div class="input-group margin-bottom-sm">
@@ -169,7 +179,7 @@ block body
 						<div class="panel panel-default">
 							<div class="panel-heading">
 								////////// STUDY BLOCKS ////////
-								<h3 class="panel-title">How long can you study for before you need a break?</h3>
+								<h3 class="panel-title">How long will you study for before taking a break?</h3>
 							</div>
 							<div class="panel-body">
 								<div class="input-group margin-bottom-sm">
@@ -250,3 +260,6 @@ block body
 			</div>
 		</div>
 	</div>
+
+	<div style="display: none" id="startdate" value="12">xx</div>
+	<div style="display: none" id="enddate" value="34">yy</div>
