@@ -8,6 +8,7 @@
 	<script src='/js/moment.min.js'></script>
 	<script src='/js/fullcalendar.js'></script>
 	<script src="/js/input.js" async></script>
+	<link href="/css/nouislider.css" rel="stylesheet">
 	script.
 		$(document).ready(function() {
 			$('#calendar').fullCalendar({
@@ -84,15 +85,15 @@ block body
 							<h3 class="panel-title">When do you study?</h3>
 						</div>
 						<div class="panel-body">
-							<div class="btn-group btn-group-toggle" data-toggle="buttons">
+							<div class="btn-group btn-group-toggle" id="studytype" data-toggle="buttons">
 								<label class="btn btn-warning active">
-									<input type="radio" name="options" id="timeregular" autocomplete="off" checked> 9-5
+									<input type="radio" name="options" id="timeregular" autocomplete="off" value=0 checked> 9-5
 								</label>
 								<label class="btn btn-warning">
-									<input type="radio" name="options" id="timeearly" autocomplete="off"> Early Bird
+									<input type="radio" name="options" id="timeearly" autocomplete="off" value=1 > Early Bird
 								</label>
 								<label class="btn btn-warning">
-									<input type="radio" name="options" id="timelate" autocomplete="off"> Night Owl
+									<input type="radio" name="options" id="timelate" autocomplete="off" value=2 > Night Owl
 								</label>
 							</div>
 						</div>
@@ -106,7 +107,7 @@ block body
 								<h3 class="panel-title">Do you want to study on exam days?</h3>
 							</div>
 							<div class="panel-body">
-								<div class="btn-group btn-group-toggle" data-toggle="buttons">
+								<div class="btn-group btn-group-toggle" id="examdays" data-toggle="buttons">
 									<label class="btn btn-warning active">
 										<input type="radio" name="options" id="examdaysyes" autocomplete="off" checked> Yes
 									</label>
@@ -126,7 +127,16 @@ block body
 							</div>
 							<div class="panel-body">
 								<div class="input-group margin-bottom-sm">
-									<input class="form-control" type="text" placeholder="8 hours">
+									<div class="slidecontainer" style="display: initial;">
+										<input type="range" min="2" max="12" value="8" class="slider" id="timestudying">
+										<p><span id="hoursstudying"></span> hours</p>
+										script.
+											var slider1 = document.getElementById("timestudying");
+											var output1 = document.getElementById("hoursstudying");
+											output1.innerHTML = slider1.value;
+
+											slider1.oninput = function(){output1.innerHTML = this.value;}
+									</div>
 								</div>
 							</div>
 					</th>
@@ -140,7 +150,16 @@ block body
 							</div>
 							<div class="panel-body">
 								<div class="input-group margin-bottom-sm">
-									<input class="form-control" type="text" placeholder="8 hours">
+									<div class="slidecontainer" style="display: initial;">
+										<input type="range" min="2" max="14" value="8" class="slider" id="timesleeping">
+										<p><span id="hourssleeping"></span> hours</p>
+										script.
+											var slider2 = document.getElementById("timesleeping");
+											var output2 = document.getElementById("hourssleeping");
+											output2.innerHTML = slider2.value;
+
+											slider2.oninput = function(){output2.innerHTML = this.value;}
+									</div>
 								</div>
 							</div>
 					</th>
@@ -154,7 +173,16 @@ block body
 							</div>
 							<div class="panel-body">
 								<div class="input-group margin-bottom-sm">
-									<input class="form-control" type="text" placeholder="2 hours">
+									<div class="slidecontainer" style="display: initial;">
+										<input type="range" min="1" max="8" value="2" class="slider" id="studyblock">
+										<p><span id="hoursstudyblock"></span> hours</p>
+										script.
+											var slider3 = document.getElementById("studyblock");
+											var output3 = document.getElementById("hoursstudyblock");
+											output3.innerHTML = slider3.value;
+
+											slider3.oninput = function(){output3.innerHTML = this.value;}
+									</div>
 								</div>
 							</div>
 					</th>
@@ -168,7 +196,16 @@ block body
 							</div>
 							<div class="panel-body">
 								<div class="input-group margin-bottom-sm">
-									<input class="form-control" type="text" placeholder="15 minutes">
+									<div class="slidecontainer" style="display: initial;">
+										<input type="range" min="5" max="60" value="15" class="slider" id="breaktime">
+										<p><span id="minutesbreaktime"></span> minutes</p>
+										script.
+											var slider4 = document.getElementById("breaktime");
+											var output4 = document.getElementById("minutesbreaktime");
+											output4.innerHTML = slider4.value;
+
+											slider4.oninput = function(){output4.innerHTML = this.value;}
+									</div>
 								</div>
 							</div>
 					</th>
@@ -182,7 +219,16 @@ block body
 							</div>
 							<div class="panel-body">
 								<div class="input-group margin-bottom-sm">
-									<input class="form-control" type="text" placeholder="45 minutes">
+									<div class="slidecontainer" style="display: initial;">
+										<input type="range" min="10" max="120" value="45" class="slider" id="mealtime">
+										<p><span id="minutesmealtime"></span> minutes</p>
+										script.
+											var slider5 = document.getElementById("mealtime");
+											var output5 = document.getElementById("minutesmealtime");
+											output5.innerHTML = slider5.value;
+
+											slider5.oninput = function(){output5.innerHTML = this.value;}
+									</div>
 								</div>
 							</div>
 					</th>
@@ -200,7 +246,7 @@ block body
 				</tr>
 			</table>
 			<div>
-				<button id="submitquestionnnaire" type="button" class="btn btn-success">Submit</button>
+				<button id="submitquestionnaire" type="button" class="btn btn-success">Submit</button>
 			</div>
 		</div>
 	</div>

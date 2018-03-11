@@ -22,9 +22,24 @@ submitclasses.addEventListener('click',function(){
 	submitclasses.style.display="none";
 	document.getElementById("habits").style.display="block";
 	$('#calendar').fullCalendar('render');
-	// $('#calendar').fullCalendar({
-	// 	defaultDate: '2014-09-12',
-	// 	editable: true,
-	// 	eventLimit: true, // allow "more" link when too many events
-	// });
+
+	var submitquestionnaire = document.getElementById("submitquestionnaire");
+	submitquestionnaire.addEventListener('click',function(){
+	var studytype = $('#filterDay input:radio:checked').val();
+	console.log(studytype);
+	//study type
+
 });
+
+});
+
+
+
+//var classes
+//var studytype = {0,1,2} --> {9-5, early bird, night owl}
+//var examdays = {true,false} --> {study on exam days, don't study on exam days}
+//var timestudying = 2 - 12 hours
+//var timesleeping = 2 - 14 hours
+//var studyblock = 1 - 8 hours
+//var breaktime = 5 - 60 minutes
+//var mealtime = 10 - 120 minutes
