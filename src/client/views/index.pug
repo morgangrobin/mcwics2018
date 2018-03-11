@@ -17,18 +17,32 @@ block scripts
     });
 
 
+
 block body
+
   <div class="body-inner">
+    style.
+      body{
+        background-image: url(https://raw.githubusercontent.com/morgangrobin/mcwics2018/master/splash.jpg);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height:100%;
+      }
     <div class="page-wrapper">
 
       // Navigation header
       <header>
-        <h3 class="header-title">ExamNanny</h3>
-        <nav>
+        <table cellpadding="50" align=left>
+          <tr>
+            <td><img src="https://raw.githubusercontent.com/morgangrobin/mcwics2018/master/logo.png" width=24px></td>
+            <td><h3 class="header-title">&nbsp ExamNanny</h3></td>
+          </tr>
+        </table>
+        <nav align=right>
           <ul class="nav header-nav">
             <li class="active"><a href="#" data-target="tab-home">Home</a></li>
             <li><a href="#" data-target="tab-input">Get Started</a></li>
-            <li><a href="#" data-target="tab-features">Features</a></li>
             <li><a href="#" data-target="tab-sign-in">Sign In</a></li>
             <li><a href="#" data-target="susan">Susan</a></li>
           </ul>
@@ -40,17 +54,19 @@ block body
 
         // Tab Home
         <div id="tab-home" class="active">
-          <h1>Plan your life.</h1>
-          <p class="lead">ExamNanny is a tool for planning your exam study schedule. Get organized, get studying.</p>
-          <p class="lead">
-            <a href="#" class="btn btn-lg btn-default" data-target="tab-input">Get Started</a>
-          </p>
-          
+          <div class="well" style="background-color: #3cc3b4;">
+            <h1>Plan your life.</h1>
+            <p class="lead">ExamNanny is a tool for planning your exam study schedule. Get organized, get studying.</p>
+            <p class="lead">
+              <a href="#" class="btn btn-lg btn-default" data-target="tab-input">Get Started</a>
+            </p>
+          </div>
+
           // React.js demo
           <div id="my-react-root"></div>
 
         </div>
-        
+
         // Tab Features
         <div id="tab-features">
           // Include another template
@@ -59,7 +75,7 @@ block body
           include demos/bootstrap-demo
         </div>
 
-        // Tab Sing In
+        // Tab Sign In
         <div id="tab-sign-in">
           <form class="form-signin">
             <h2 class="form-signin-heading">Please sign in</h2>
@@ -85,8 +101,8 @@ block body
         <div id="susan">
           include susan.pug
         </div>
-          
-           
+
+
 
       </div>
 
