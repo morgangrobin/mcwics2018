@@ -36,6 +36,15 @@ submitclasses.addEventListener('click',function(){
     		end: endTimes[i]
     	};
     	myCalendar.fullCalendar('renderEvent', newEvent, true);
+
+    	//make class sliders visible
+
+    	mysliderdiv = document.getElementById("examdiv"+(i+1));
+    	console.log(mysliderdiv);
+    	mysliderdiv.style.display="block";
+    	myclassh3 = document.getElementById("examtitle"+(i+1));
+    	myclassh3.innerHTML=classes[i];
+
 	}
 
 	var submitquestionnaire = document.getElementById("submitquestionnaire");

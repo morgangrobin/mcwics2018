@@ -1,131 +1,131 @@
-<head>
+//- <head>
 
-	<link rel="stylesheet" href="/css/sliders.css" />
-	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+//- 	//- <link rel="stylesheet" href="/css/sliders.css" />
+//- 	//- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
-	//<script src="/js/jquery.min.js"></script>
-	<script src="/js/jquery-ui.min.js"></script>
+//- 	//- //<script src="/js/jquery.min.js"></script>
+//- 	//- <script src="/js/jquery-ui.min.js"></script>
 
-<title> How do you want to split your study time? </title>
+//- <title> How do you want to split your study time? </title>
 
-script.
+//- script.
 
 
-	$(function() {
+//- 	$(function() {
 
-		var sumVals = 30;
+//- 		var sumVals = 30;
 
-		$("#slider1").slider({
-			value:20,
-			min: 0,
-			max: 100,
-			step: 5,
-			slide: function( event, ui ) {
-				$( "#amount1" ).val(ui.value + "%");
+//- 		$("#slider1").slider({
+//- 			value:20,
+//- 			min: 0,
+//- 			max: 100,
+//- 			step: 5,
+//- 			slide: function( event, ui ) {
+//- 				$( "#amount1" ).val(ui.value + "%");
 		
 			
-			}
-			});
-		$("#amount1").val($("#slider1").slider("value") + "%");
+//- 			}
+//- 			});
+//- 		$("#amount1").val($("#slider1").slider("value") + "%");
 
 
-		$("#slider2").slider({
-			value:20,
-			min: 0,
-			max: 100,
-			step: 5,
-			slide: function( event, ui ) {
-				$( "#amount2" ).val(ui.value + "%");
+//- 		$("#slider2").slider({
+//- 			value:20,
+//- 			min: 0,
+//- 			max: 100,
+//- 			step: 5,
+//- 			slide: function( event, ui ) {
+//- 				$( "#amount2" ).val(ui.value + "%");
 				
-			}
-			});
-		$("#amount2").val($("#slider2").slider("value") + "%");
+//- 			}
+//- 			});
+//- 		$("#amount2").val($("#slider2").slider("value") + "%");
 
-		$("#slider3").slider({
-			value:20,
-			min: 0,
-			max: 100,
-			step: 5,
-			slide: function( event, ui ) {
-				$( "#amount3" ).val(ui.value + "%");
+//- 		$("#slider3").slider({
+//- 			value:20,
+//- 			min: 0,
+//- 			max: 100,
+//- 			step: 5,
+//- 			slide: function( event, ui ) {
+//- 				$( "#amount3" ).val(ui.value + "%");
 				
-			}
-			});
-		$("#amount3").val($("#slider3").slider("value") + "%");
+//- 			}
+//- 			});
+//- 		$("#amount3").val($("#slider3").slider("value") + "%");
 
-		$("#slider4").slider({
-			value:20,
-			min: 0,
-			max: 100,
-			step: 5,
-			slide: function( event, ui ) {
+//- 		$("#slider4").slider({
+//- 			value:20,
+//- 			min: 0,
+//- 			max: 100,
+//- 			step: 5,
+//- 			slide: function( event, ui ) {
 			
-				$( "#amount4" ).val(ui.value + "%");
+//- 				$( "#amount4" ).val(ui.value + "%");
 				
 			
-			}
-			});
-		$("#amount4").val($("#slider4").slider("value") + "%");
+//- 			}
+//- 			});
+//- 		$("#amount4").val($("#slider4").slider("value") + "%");
 
-		$("#slider5").slider({
-			value:20,
-			min: 0,
-			max: 100,
-			step: 5,
-			slide: function( event, ui ) {
-				$( "#amount5" ).val(ui.value + "%");
+//- 		$("#slider5").slider({
+//- 			value:20,
+//- 			min: 0,
+//- 			max: 100,
+//- 			step: 5,
+//- 			slide: function( event, ui ) {
+//- 				$( "#amount5" ).val(ui.value + "%");
 				
-			}
-			});
-		$("#amount5").val($("#slider5").slider("value") + "%");
+//- 			}
+//- 			});
+//- 		$("#amount5").val($("#slider5").slider("value") + "%");
 
-	} );
+//- 	} );
 
 
 
-</head>
+//- </head>
 
-<body>
+//- <body>
 
-<div>
-	<h2>Exam #1</h2>
-	<div id="slider1" > </div>
-		<p>
-		<input type="text" id="amount1" readonly style="border:0; color:#f6931f; font-weight:bold; font-size: 16pt;">
-		</p>
-</div>
+//- <div>
+//- 	<h2>Exam #1</h2>
+//- 	<div id="slider1" > </div>
+//- 		<p>
+//- 		<input type="text" id="amount1" readonly style="border:0; color:#f6931f; font-weight:bold; font-size: 16pt;">
+//- 		</p>
+//- </div>
 
-<div>
-	<h2>Exam #2</h2>
-	<div id="slider2" > </div>
-		<p>
-		<input type="text" id="amount2" readonly style="border:0; color:#f6931f; font-weight:bold; font-size: 16pt;">
-		</p>
-</div>
+//- <div>
+//- 	<h2>Exam #2</h2>
+//- 	<div id="slider2" > </div>
+//- 		<p>
+//- 		<input type="text" id="amount2" readonly style="border:0; color:#f6931f; font-weight:bold; font-size: 16pt;">
+//- 		</p>
+//- </div>
 
-<div>
-	<h2>Exam #3</h2>
-	<div id="slider3"> </div>
-		<p>
-		<input type="text" id="amount3" readonly style="border:0; color:#f6931f; font-weight:bold; font-size: 16pt;">
-		</p>
-</div>
+//- <div>
+//- 	<h2>Exam #3</h2>
+//- 	<div id="slider3"> </div>
+//- 		<p>
+//- 		<input type="text" id="amount3" readonly style="border:0; color:#f6931f; font-weight:bold; font-size: 16pt;">
+//- 		</p>
+//- </div>
 
-<div>
-	<h2>Exam #4</h2>
-	<div id="slider4"> </div>
-		<p>
-		<input type="text" id="amount4" readonly style="border:0; color:#f6931f; font-weight:bold; font-size: 16pt;">
-		</p>
-</div>
+//- <div>
+//- 	<h2>Exam #4</h2>
+//- 	<div id="slider4"> </div>
+//- 		<p>
+//- 		<input type="text" id="amount4" readonly style="border:0; color:#f6931f; font-weight:bold; font-size: 16pt;">
+//- 		</p>
+//- </div>
 
-<div>
-	<h2>Exam #5</h2>
-	<div id="slider5"> </div>
-		<p>
-		<input type="text" id="amount5" readonly style="border:0; color:#f6931f; font-weight:bold; font-size: 16pt;">
-		</p>
-</div>
+//- <div>
+//- 	<h2>Exam #5</h2>
+//- 	<div id="slider5"> </div>
+//- 		<p>
+//- 		<input type="text" id="amount5" readonly style="border:0; color:#f6931f; font-weight:bold; font-size: 16pt;">
+//- 		</p>
+//- </div>
 
-</body>
-</html>
+//- </body>
+//- </html>

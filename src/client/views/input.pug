@@ -9,6 +9,11 @@
 	<script src='/js/fullcalendar.js'></script>
 	<script src="/js/input.js" async></script>
 	<link href="/css/nouislider.css" rel="stylesheet">
+	<link rel="stylesheet" href="/css/sliders.css" />
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+	//<script src="/js/jquery.min.js"></script>
+	<script src="/js/jquery-ui.min.js"></script>
 	script.
 		$(document).ready(function() {
 			$('#calendar').fullCalendar({
@@ -31,6 +36,78 @@
 			}
 			});
 		});
+	script.
+
+
+							$(function() {
+
+								var sumVals = 30;
+
+								$("#slider1").slider({
+									value:20,
+									min: 0,
+									max: 100,
+									step: 5,
+									slide: function( event, ui ) {
+										$( "#amount1" ).val(ui.value + "%");
+								
+									
+									}
+									});
+								$("#amount1").val($("#slider1").slider("value") + "%");
+
+
+								$("#slider2").slider({
+									value:20,
+									min: 0,
+									max: 100,
+									step: 5,
+									slide: function( event, ui ) {
+										$( "#amount2" ).val(ui.value + "%");
+										
+									}
+									});
+								$("#amount2").val($("#slider2").slider("value") + "%");
+
+								$("#slider3").slider({
+									value:20,
+									min: 0,
+									max: 100,
+									step: 5,
+									slide: function( event, ui ) {
+										$( "#amount3" ).val(ui.value + "%");
+										
+									}
+									});
+								$("#amount3").val($("#slider3").slider("value") + "%");
+
+								$("#slider4").slider({
+									value:20,
+									min: 0,
+									max: 100,
+									step: 5,
+									slide: function( event, ui ) {
+									
+										$( "#amount4" ).val(ui.value + "%");
+										
+									
+									}
+									});
+								$("#amount4").val($("#slider4").slider("value") + "%");
+
+								$("#slider5").slider({
+									value:20,
+									min: 0,
+									max: 100,
+									step: 5,
+									slide: function( event, ui ) {
+										$( "#amount5" ).val(ui.value + "%");
+										
+									}
+									});
+								$("#amount5").val($("#slider5").slider("value") + "%");
+
+							} );
 </head>
 
 block body
@@ -241,6 +318,59 @@ block body
 										</div>
 									</div>
 								</div>
+						</th>
+					</tr>
+					<tr>
+						<th align=left>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									//////// MEALS /////////
+									<h3 class="panel-title">How will you split your study time?</h3>
+								</div>
+								<div class="panel-body">
+									<div class="input-group margin-bottom-sm">
+										<div id="examdiv1" style="display:none">
+											<h3 id=examtitle1>Exam #1</h3>
+											<div id="slider1" > </div>
+												<p>
+												<input type="text" id="amount1" readonly style="border:0; color:#f6931f; font-weight:bold; font-size: 16pt;">
+												</p>
+										</div>
+
+										<div id="examdiv2" style="display:none">
+											<h3 id="examtitle2">Exam #2</h3>
+											<div id="slider2" > </div>
+												<p>
+												<input type="text" id="amount2" readonly style="border:0; color:#f6931f; font-weight:bold; font-size: 16pt;">
+												</p>
+										</div>
+
+										<div id="examdiv3" style="display:none">
+											<h3 id=examtitle3>Exam #3</h3>
+											<div id="slider3"> </div>
+												<p>
+												<input type="text" id="amount3" readonly style="border:0; color:#f6931f; font-weight:bold; font-size: 16pt;">
+												</p>
+										</div>
+
+										<div id="examdiv4" style="display:none">
+											<h3 id=examtitle4>Exam #4</h3>
+											<div id="slider4"> </div>
+												<p>
+												<input type="text" id="amount4" readonly style="border:0; color:#f6931f; font-weight:bold; font-size: 16pt;">
+												</p>
+										</div>
+
+										<div id="examdiv5" style="display:none">
+											<h3 id=examtitle5>Exam #5</h3>
+											<div id="slider5"> </div>
+												<p>
+												<input type="text" id="amount5" readonly style="border:0; color:#f6931f; font-weight:bold; font-size: 16pt;">
+												</p>
+										</div>
+									</div>
+								</div>
+							</div>
 						</th>
 					</tr>
 					<tr>
