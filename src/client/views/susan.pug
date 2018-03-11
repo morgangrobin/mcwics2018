@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en">
+<link rel="stylesheet" href="/css/sliders.css" />
 
 <head>
 	<title> How do you want to split your study time? </title>
@@ -14,10 +15,10 @@
 <!-- EXAM 1 SLIDER -->
 
 <div class="slidecontainer" id="slider1" style="display: initial;">
-	<p> Exam 1 </p>
-	<input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-	<p>Value: <span id="demo"></span></p>
-
+	<h2> Exam 1 </h2>
+	<input type="range" min="1" max="100" value="20" class="slider" id="myRange">
+	
+	<h2><span id="demo"> </span> %</h2> <span><h2> Lock: <input type="checkbox"> </h2></span>
 
 	script.
 		var slider = document.getElementById("myRange");
@@ -29,39 +30,8 @@
 
 <!-- EXAM 2 SLIDER -->
 
-<div class="slidecontainer" id="slider2" style="display: initial;">
-	<p> Exam 2 </p>
-	<input type="range" min="1" max="100" value="50" class="slider" id="myRange2">
-	<p>Value: <span id="demo2"></span></p>
-
-
-	script.
-		var slider = document.getElementById("myRange2");
-		var output = document.getElementById("demo2");
-		output.innerHTML = slider.value;
-
-		slider.oninput = function(){output.innerHTML = this.value;}
-</div>
-
-<!-- EXAM 3 SLIDER -->
-<div class="slidecontainer" id="slider2" style="display: initial;">
-	<p> Exam 3 </p>
-	<input type="range" min="1" max="100" value="50" class="slider" id="myRange3">
-	<p>Value: <span id="demo3"></span></p>
-
-
-	script.
-		var slider = document.getElementById("myRange3");
-		var output = document.getElementById("demo3");
-		output.innerHTML = slider.value;
-
-		slider.oninput = function(){output.innerHTML = this.value;}
-</div>
-
-<!-- EXAM 4 SLIDER -->
 
 
 </body>
-
 
 </html>
