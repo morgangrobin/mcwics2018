@@ -84,9 +84,17 @@ block body
 							<h3 class="panel-title">When do you study?</h3>
 						</div>
 						<div class="panel-body">
-							<button type="button" class="btn btn-warning">9-5</button>
-							<button type="button" class="btn btn-warning">Early Bird</button>
-							<button type="button" class="btn btn-warning">Night Owl</button>
+							<div class="btn-group btn-group-toggle" data-toggle="buttons">
+								<label class="btn btn-warning active">
+									<input type="radio" name="options" id="timeregular" autocomplete="off" checked> 9-5
+								</label>
+								<label class="btn btn-warning">
+									<input type="radio" name="options" id="timeearly" autocomplete="off"> Early Bird
+								</label>
+								<label class="btn btn-warning">
+									<input type="radio" name="options" id="timelate" autocomplete="off"> Night Owl
+								</label>
+							</div>
 						</div>
 					</th>
 				</tr>
@@ -98,8 +106,14 @@ block body
 								<h3 class="panel-title">Do you want to study on exam days?</h3>
 							</div>
 							<div class="panel-body">
-								<button type="button" class="btn btn-warning">Yes</button>
-								<button type="button" class="btn btn-warning">No</button>
+								<div class="btn-group btn-group-toggle" data-toggle="buttons">
+									<label class="btn btn-warning active">
+										<input type="radio" name="options" id="examdaysyes" autocomplete="off" checked> Yes
+									</label>
+									<label class="btn btn-warning">
+										<input type="radio" name="options" id="examdaysno" autocomplete="off"> No
+									</label>
+								</div>
 							</div>
 					</th>
 				</tr>
