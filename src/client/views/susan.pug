@@ -1,37 +1,133 @@
-<!DOCTYPE html>
-
-<html lang="en">
-<link rel="stylesheet" href="/css/sliders.css" />
-
 <head>
-	<title> How do you want to split your study time? </title>
-	<link href="/css/nouislider.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="/css/sliders.css" />
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+	<script src="/js/jquery-3.3.1.min.js"></script>
+	<script src="/js/jquery.js"></script>
+	<script src="/js/jquery-ui.js"></script>
+	<script src="/js/jquery-ui.min.js"></script>
+
+<title> How do you want to split your study time? </title>
+
+script.
+
+
+	$(function() {
+
+		var sumVals = 30;
+
+		$("#slider1").slider({
+			value:20,
+			min: 0,
+			max: 100,
+			step: 5,
+			slide: function( event, ui ) {
+				$( "#amount1" ).val(ui.value + "%");
+		
+			
+			}
+			});
+		$("#amount1").val($("#slider1").slider("value") + "%");
+
+
+		$("#slider2").slider({
+			value:20,
+			min: 0,
+			max: 100,
+			step: 5,
+			slide: function( event, ui ) {
+				$( "#amount2" ).val(ui.value + "%");
+				
+			}
+			});
+		$("#amount2").val($("#slider2").slider("value") + "%");
+
+		$("#slider3").slider({
+			value:20,
+			min: 0,
+			max: 100,
+			step: 5,
+			slide: function( event, ui ) {
+				$( "#amount3" ).val(ui.value + "%");
+				
+			}
+			});
+		$("#amount3").val($("#slider3").slider("value") + "%");
+
+		$("#slider4").slider({
+			value:20,
+			min: 0,
+			max: 100,
+			step: 5,
+			slide: function( event, ui ) {
+			
+				$( "#amount4" ).val(ui.value + "%");
+				
+			
+			}
+			});
+		$("#amount4").val($("#slider4").slider("value") + "%");
+
+		$("#slider5").slider({
+			value:20,
+			min: 0,
+			max: 100,
+			step: 5,
+			slide: function( event, ui ) {
+				$( "#amount5" ).val(ui.value + "%");
+				
+			}
+			});
+		$("#amount5").val($("#slider5").slider("value") + "%");
+
+	} );
+
+
+
 </head>
 
 <body>
 
-<h1> How do you want to split your study time? </h1>
-
-<!-- EXAM 1 SLIDER -->
-
-<div class="slidecontainer" id="slider1" style="display: initial;">
-	<h2> Exam 1 </h2>
-	<input type="range" min="1" max="100" value="20" class="slider" id="myRange">
-	
-	<h2><span id="demo"> </span> %</h2> <span><h2> Lock: <input type="checkbox"> </h2></span>
-
-	script.
-		var slider = document.getElementById("myRange");
-		var output = document.getElementById("demo");
-		output.innerHTML = slider.value;
-
-		slider.oninput = function(){output.innerHTML = this.value;}
+<div>
+	<h2>Exam #1</h2>
+	<div id="slider1" > </div>
+		<p>
+		<input type="text" id="amount1" readonly style="border:0; color:#f6931f; font-weight:bold; font-size: 16pt;">
+		</p>
 </div>
 
-<!-- EXAM 2 SLIDER -->
+<div>
+	<h2>Exam #2</h2>
+	<div id="slider2" > </div>
+		<p>
+		<input type="text" id="amount2" readonly style="border:0; color:#f6931f; font-weight:bold; font-size: 16pt;">
+		</p>
+</div>
 
+<div>
+	<h2>Exam #3</h2>
+	<div id="slider3"> </div>
+		<p>
+		<input type="text" id="amount3" readonly style="border:0; color:#f6931f; font-weight:bold; font-size: 16pt;">
+		</p>
+</div>
 
+<div>
+	<h2>Exam #4</h2>
+	<div id="slider4"> </div>
+		<p>
+		<input type="text" id="amount4" readonly style="border:0; color:#f6931f; font-weight:bold; font-size: 16pt;">
+		</p>
+</div>
+
+<div>
+	<h2>Exam #5</h2>
+	<div id="slider5"> </div>
+		<p>
+		<input type="text" id="amount5" readonly style="border:0; color:#f6931f; font-weight:bold; font-size: 16pt;">
+		</p>
+</div>
 
 </body>
-
 </html>
