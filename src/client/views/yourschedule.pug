@@ -1,0 +1,43 @@
+
+script.
+		$(document).ready(function() {
+			$('#weeklycalendar').fullCalendar({
+			selectable: true,
+			unselectAuto: false,
+			header: {
+				left: 'prev,next today',
+				center: 'title',
+				right: 'month,agendaWeek,agendaDay'
+			},
+			dayClick: function(date) {
+				document.getElementById("startdate").innerHTML = date.format();
+				console.log(document.getElementById("startdate").innerHTML);
+				document.getElementById("enddate").innerHTML = date.format();
+				console.log(document.getElementById("enddate").innerHTML);
+			},
+			select: function(startDate, endDate) {
+				document.getElementById("startdate").innerHTML = startDate.format();
+				document.getElementById("enddate").innerHTML = endDate.format();
+			}
+			});
+		});
+
+block body
+	<div class="well" style="background-color: #17e7b8;">
+		<div class="theme-showcase">
+				<div class="page-header">
+					<h1>My Schedule</h1>
+				</div>
+				<table class = 'table'>
+					<tr>
+						<th align=left>
+						<div class="panel panel-default">
+							<div class="panel-body">
+								<div id="weeklycalendar"></div>
+							</div>
+						</th>
+					</tr>
+				</table>
+		</div>
+		
+	</div>
