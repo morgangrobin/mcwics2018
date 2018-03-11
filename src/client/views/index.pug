@@ -16,6 +16,17 @@ block scripts
       });
     });
 
+  script.
+    $(function() {
+      $("#getstarted").click(function(){
+        $(".header-nav li").removeClass("active");
+        $("#inputtab").addClass("active");
+
+        $(".content-wrapper > div").removeClass("active");
+        $("#" + $(this).data("target")).addClass("active");
+      });
+    });
+
 
 
 block body
@@ -42,7 +53,7 @@ block body
         <nav align=right>
           <ul class="nav header-nav">
             <li class="active"><a href="#" data-target="tab-home">Home</a></li>
-            <li><a href="#" data-target="tab-input">Get Started</a></li>
+            <li id="inputtab"><a href="#" data-target="tab-input">Get Started</a></li>
             <li><a href="#" data-target="tab-sign-in">Sign In</a></li>
             <li><a href="#" data-target="susan">Susan</a></li>
           </ul>
@@ -58,7 +69,7 @@ block body
             <h1>Plan your life.</h1>
             <p class="lead">ExamNanny is a tool for planning your exam study schedule.<br>Get organized, get studying.</p>
             <p class="lead">
-              <a href="#" class="btn btn-lg btn-default" data-target="tab-input">Get Started</a>
+              <a href="#" class="btn btn-lg btn-default" id="getstarted" data-target="tab-input">Get Started</a>
             </p>
           </div>
         </div>
