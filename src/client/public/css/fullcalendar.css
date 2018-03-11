@@ -99,7 +99,7 @@ body .fc {
 .fc-state-active,
 .fc-state-disabled {
   color: #333333;
-  background-color: #e6e6e6; }
+  background-color: #333333; }
 
 .fc-state-hover {
   color: #333333;
@@ -346,7 +346,7 @@ temporary rendered events).
 
 .fc-event,
 .fc-event:hover {
-  color: #fff;
+  color: #333333;
   /* default TEXT color */
   text-decoration: none;
   /* if <a> has an href */ }
@@ -719,7 +719,7 @@ NOTE: use percentage font sizes or else old IE chokes
 --------------------------------------------------------------------------------------------------*/
 .ui-widget .fc-event {
   /* overpower jqui's styles on <a> tags. TODO: more DRY */
-  color: #fff;
+  color: #333333;
   /* default TEXT color */
   text-decoration: none;
   /* if <a> has an href */
