@@ -24,19 +24,19 @@ var submitclasses = document.getElementById("submitclasses");
 submitclasses.addEventListener('click',function(){
 	submitclasses.style.display="none";
 	document.getElementById("habits").style.display="block";
-	$('#calendar').fullCalendar('render');
+	//$('#calendar').fullCalendar('render');
 
-	var myCalendar = $('#calendar'); 
-	myCalendar.fullCalendar();
-	for (i = 0; i < classes.length; i++) { 
-    	var newEvent = {
-    		title: classes[i],
-    		allDay: false,
-    		start: startTimes[i],
-    		end: endTimes[i]
-    	};
-    	myCalendar.fullCalendar('renderEvent', newEvent, true);
-	}
+	// var myCalendar = $('#calendar'); 
+	// myCalendar.fullCalendar();
+	// for (i = 0; i < classes.length; i++) { 
+ //    	var newEvent = {
+ //    		title: classes[i],
+ //    		allDay: false,
+ //    		start: startTimes[i],
+ //    		end: endTimes[i]
+ //    	};
+ //    	myCalendar.fullCalendar('renderEvent', newEvent, true);
+	// }
 
 	var submitquestionnaire = document.getElementById("submitquestionnaire");
 	submitquestionnaire.addEventListener('click',function(){
